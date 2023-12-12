@@ -1,0 +1,102 @@
+.sidebarAbout a.pe-cursor {
+  color: var(--text);
+}
+
+.sidebarAbout i {
+  font-size: 24px;
+}
+
+.sidebarAbout {
+  border-right: 1px solid var(--border);
+}
+
+li.list-group-item {
+  background: none;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  border: none;
+  padding: 10px 0px;
+}
+code {
+  color: var(--text);
+}
+
+.infoTitle .list-group-item {
+  color: var(--text);
+}
+.infoTitle .list-group-item.active {
+  z-index: 0;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+}
+
+.bio-text p {
+  color: green;
+}
+
+.infoTitle h3.active {
+  color: var(--white);
+}
+.border,
+.border-top,
+.border-end,
+.border-bottom,
+.border-start {
+  border-color: var(--border) !important;
+}
+
+.bodyWraperContent .title {
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.bodyWraperContent .description {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.list-group-interest {
+  list-style: none;
+}
+
+#profile {
+  display: flex;
+}
+
+.MySection {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin-top: 45px;
+
+  justify-content: center;
+}
+.githubData .card {
+  background-color: transparent;
+  color: var(--white);
+}
+
+.profileImage {
+  width: 40px;
+  border-radius: 100px;
+  border: 1px solid var(--white);
+  padding: 3px;
+}
+
+@media only screen and (max-width: 320px) {
+  .email-phone {
+    .list-group {
+      padding: 0 !important;
+      width: 83% !important;
+      li {
+        right: 22%;
+      }
+    }
+  }
+}

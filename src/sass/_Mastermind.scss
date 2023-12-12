@@ -1,0 +1,96 @@
+/*-------------------------------MasterMind Styling-----------------------------*/
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.guess-row {
+  display: flex;
+  justify-content: center;
+}
+
+.btnTic {
+  border: 1px solid var(--white);
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  color: var(--white);
+  &:hover {
+    border: 1px solid var(--orange);
+    color: var(--white);
+  }
+}
+
+.btn-palette {
+  border: 1px solid #6c757d;
+  border-radius: 10px;
+}
+
+.gameMindBox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(184deg, #43d9ad66, #4d5bce40);
+}
+.gameMind:before {
+  content: "";
+  background-image: url(./Components/assets/BG.png);
+  height: 500px;
+  width: 50vw;
+  position: absolute;
+  display: flex;
+  background-size: contain;
+  top: 50px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  left: 40%;
+}
+.gameMind:after {
+  content: "";
+  background-image: url(./Components/assets/Blue.png);
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: 0;
+  top: 200px;
+  right: 0%;
+}
+
+.result-row {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.palette-icon {
+  margin-bottom: -10px;
+}
+@media (max-width: 480px) {
+  .gameMindBox {
+    margin-top: 10%;
+  }
+
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+  --primary: #1c2b3a0a;
+  --orange: #fea55f;
+  --text: #607b96;
+  --dark: #010c15;
+
+  --white: #fff;
+  --border: #1e2d3d;
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pe-cursor {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--border);
+  color: var(--white);
+  padding: 5px 10px;
+  border: none;
+  font-size: 12px;
+}
+
+.btn:hover {
+  background: var(--orange);
+  color: #1e2d3d;
+  color: var(--border);
+}
+
+.solidBtn {
+  background-color: var(--border);
+  color: var(--white);
+  padding: 5px 10px;
+  border: none;
+  font-size: 12px;
+}
+
+.solidBig {
+  font-size: 16px;
+  padding: 6px 12px;
+}
+
+.outlinebtn {
+  background: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #6c757d;
+  color: var(--white);
+}
+
+.MainBody {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+body {
+  background-color: #010c15;
+  font-family: "Fira Code";
+  color: var(--text);
+}
+
+.BodyContainer {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0px 30px;
+  width: 100%;
+}

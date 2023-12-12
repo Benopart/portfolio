@@ -1,0 +1,134 @@
+/*--------------------------------------------Project Details---------------------------------------*/
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.project-title h1 {
+  margin-top: 90px;
+}
+
+.project-overview h2,
+.project-toolkit h2,
+.project-accordion h2 {
+  margin-top: 25px !important;
+}
+
+.project-video-links {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  padding-top: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+.project-video {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  width: 100%;
+
+  img {
+    width: 75%;
+    margin-top: 165px;
+  }
+}
+
+.project-links {
+  width: auto;
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.more-project-cta {
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  padding-left: 0;
+  padding-right: 2rem;
+  margin-top: 3rem;
+}
+
+.project-info {
+  width: 90%;
+  margin-top: 180px;
+}
+
+.project-toolkit ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-toolkit ul li {
+  border: solid 2px #1e2d3d;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.sidebarProject a.pe-cursor,
+.sidebarLinks a.pe-cursor {
+  color: var(--text);
+}
+
+.sidebarProject,
+.sidebarLinks {
+  border-right: 1px solid var(--border);
+  width: auto;
+  vertical-align: middle;
+}
+
+.sidebarLinks a.pe-cursor {
+  text-decoration: none;
+}
+
+.sidebarProject i {
+  font-size: 24px;
+}
+
+.hover-project-link p {
+  margin: 0;
+}
+
+.hover-project-link p:hover {
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 604px) {
+  .project-video img {
+    width: 98%;
+    margin-top: 280px;
+  }
+  .arrow-down {
+    display: none;
+  }
+
+  .project-video-links {
+    flex-direction: column;
+  }
+
+  .hover-project-link {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .sidebarLinks {
+    padding-top: 2rem !important;
+  }
+
+  .project-info {
+    margin-top: 10%;
+  }
+}

@@ -1,0 +1,20 @@
+/* Footer */
+.main_footer {
+  position: fixed;
+  bottom: 0 !important;
+  border-top: 1px solid var(--border) !important;
+  background-color: var(--dark);
+  left: 0;
+  right: 0;
+  footer {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    height: 45px;
+  }
+}
+
+.Footer-brand {
+  margin: 0px 50px 0px 0px;
+}

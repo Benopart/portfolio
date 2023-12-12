@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.fixed-column {
+  width: 20%; /* Adjust as needed */
+  height: 100%;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.scrollable-column {
+  width: 30%; /* Adjust as needed */
+  height: 100%;
+  overflow-y: scroll;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.scrollable-content {
+  height: 200%; /* Making the content inside scrollable columns longer for demonstration */
+}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari) */
+.scrollable-column::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable-column::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollable-column::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.scrollable-column::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom Scrollbar for Firefox */
+.scrollable-column {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}

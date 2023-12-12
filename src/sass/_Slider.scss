@@ -1,0 +1,146 @@
+.slider {
+  width: 90vw;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  .wrapper {
+    height: auto;
+    transition: 0.5s all linear;
+    will-change: transform;
+
+    width: calc(100% * 5);
+    display: flex;
+  }
+
+  .arrows {
+    position: absolute;
+    top: 50%;
+    background: none;
+    height: auto;
+    border: 0;
+    cursor: pointer;
+    transition: ease 0.3s all;
+    outline: none;
+
+    &.prev {
+      left: 0;
+
+      &:hover {
+        opacity: 0.7;
+        left: -10px;
+      }
+    }
+
+    &.next {
+      right: 0;
+
+      &:hover {
+        right: -10px;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .dots-container {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: auto;
+    text-align: center;
+    left: 50%;
+    bottom: 9px;
+    transform: translateX(-50%);
+    z-index: 10;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding: 5px;
+
+      &.active {
+        button {
+          color: #00d8ff;
+        }
+      }
+
+      button {
+        color: #fff;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          text-decoration: none;
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .toggle-play {
+    background: transparent;
+    border: none;
+
+    position: absolute;
+    width: auto;
+    right: 5%;
+    bottom: 9px;
+    color: #3d3d3d;
+    z-index: 1000000;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+
+  .each-slide {
+    background-image: url(./Components/assets/BG.png);
+
+    width: 100vw;
+    height: auto;
+    float: center;
+
+    font-size: 2vh;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    transition: 0.5s all ease;
+    img {
+      width: 80%;
+      margin-bottom: 3%;
+    }
+  }
+}
+
+.projects-section-title {
+  padding-top: 10%;
+}
+
+.more-info-btn {
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 425px) {
+  .slider {
+    margin-top: 10%;
+    .dots-container {
+      bottom: -10px;
+
+      li {
+        display: inline-block;
+        padding: 3px;
+      }
+    }
+  }
+
+  .each-slide {
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}

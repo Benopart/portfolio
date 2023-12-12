@@ -1,0 +1,34 @@
+/*--------------------------Accordion----------------------*/
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+  margin-bottom: 5rem;
+  .accordion-item {
+    border: none;
+  }
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #1e2d3d;
+  color: var(--text);
+}
+
+.accordion-title:hover {
+  background-color: #607b96;
+  color: #fff;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: #011221;
+  color: var(--text);
+  line-height: 150%;
+}
